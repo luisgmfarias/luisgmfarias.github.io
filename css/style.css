@@ -4,7 +4,7 @@
     border: 0;
     scroll-behavior: smooth;
   }
-  
+
   body{
     display: -webkit-flex;
     display: -ms-flex;
@@ -52,7 +52,8 @@
 
   header a:hover{
     background-color: black;
-    color: white; 
+    color: white;
+    transition: all 1s ease;
   }
 
   #presentation{
@@ -68,7 +69,7 @@
 
   #rocket{
     width: 100vw;
-    position: fixed; 
+    position: fixed;
     align-items: flex-start;
     animation-delay: 0.3s;
   }
@@ -81,7 +82,7 @@
   .home-container h1{
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    font-weight: bolder; 
+    font-weight: bolder;
     color: black;
     font-size: 80px;
     animation-delay: 0.2s;
@@ -102,19 +103,18 @@
     animation-delay: 0.6s;
     text-align: center;
   }
-  
+
   .bio-container{
     -webkit-background-size: cover;
     background-size: cover;
     background-position:center;
-    align-items: center;
     color: white;
   }
 
   .bio-container div{
     text-align: center;
   }
-  
+
   .bio-container h3{
     font-family: "Roboto", sans-serif;
     font-style: italic;
@@ -124,16 +124,20 @@
     margin-bottom: 5%;
   }
 
-  .bio-container img{
-    width: 40px;
+  #saturn{
+    width: 42px;
+    transition: width 5s, height 5s, transform 5s;
+  }
+
+  #saturn:hover{
+    transform: rotate(720deg);
   }
 
   .bio{
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-content: center;
-    margin: 0% 5% 0% 5%
+    margin: 0px 250px 0px 250px;
   }
 
   .bio p{
@@ -154,7 +158,7 @@
 
   .bio div{
       text-align: left;
-      margin-left: 2%; 
+      margin-left: 2%;
       font-size: 18px;
   }
 
@@ -168,9 +172,90 @@
     font-weight: 200;
     font-style: italic;
   }
-  
+
+  .skills-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0% 5% 0%;
+  }
+
+  .skills-container h3{
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: -1px;
+    margin-bottom: 2.5%;
+  }
+
+  #superman{
+    transform: rotate(-60deg);
+    width: 42px;
+  }
+
+  #skills-content{
+    margin-top: 2.5%;
+  }
+
+  #skills-content h4{
+    width: 30%;
+    display: flex;
+    font-size: 1.5em;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    align-items: center;
+  }
+
+  #skills-content h4:hover{
+      font-weight: 400;
+      cursor: pointer;
+  }
+
+  #skills-content div{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    display: flex;
+    align-items: center;
+  }
+
+  .row-wrap{
+    flex-flow: row wrap;
+  }
+
+  .space-around{
+    justify-content: space-around;
+  }
+
+  #skills-content div h3{
+      position: absolute;
+      font-family: 'Roboto', sans-serif;
+      font-style: italic;
+      text-transform: uppercase;
+      font-size: 120px;
+      color: rgba(171, 183, 183, .7);
+      z-index: -1;
+      letter-spacing: 30px;
+  }
+
+  #skills-content div div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #skills-content div h5{
+    font-size: 20px;
+    margin-bottom: 5%;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+  }
+
   /*Parallax effect section 2*/
-  
+
   .parallax{
     background-image: linear-gradient(rgba(1,1,1,.7),rgba(1,1,1,.7)), url(../images/milky-way-1023340_1920.jpg);
     background-position: center;
