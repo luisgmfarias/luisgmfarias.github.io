@@ -43,7 +43,7 @@
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color:rgba(3, 128,94, 1);
     font-size: 20px;
     margin: 0px 20px 0px 20px;
     padding:5px 10px 5px 10px;
@@ -51,13 +51,13 @@
   }
 
   header a:hover{
-    background-color: black;
+    background-color: rgba(3, 128,94, 1);;
     color: white;
     transition: all 1s ease;
   }
 
   #presentation{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgba(3, 128,94, 1);;
     padding: 5% 10% 3% 10%;
   }
 
@@ -83,7 +83,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: bolder;
-    color: black;
+    color: rgba(3, 128,94, 1);
     font-size: 80px;
     animation-delay: 0.2s;
   }
@@ -98,7 +98,7 @@
   .home-container h3{
     font-family: 'Open Sans',sans-serif;
     font-size: 28px;
-    color: black;
+    color: rgba(3, 128,94, 1);
     text-transform: lowercase;
     animation-delay: 0.6s;
     text-align: center;
@@ -157,9 +157,9 @@
   }
 
   .bio div{
-      text-align: left;
-      margin-left: 2%;
-      font-size: 18px;
+    text-align: left;
+    margin-left: 2%;
+    font-size: 18px;
   }
 
   .bio h4{
@@ -173,91 +173,119 @@
     font-style: italic;
   }
 
-  .skills-container{
+  .abilities-container{
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 5% 0% 5% 0%;
+    color:black;
   }
 
-  .skills-container h3{
+  .abilities-container div h3{
     font-family: "Roboto", sans-serif;
-    font-style: italic;
     font-weight: normal;
     text-transform: uppercase;
+    font-style: italic;
     font-size: 50px;
     letter-spacing: -1px;
-    margin-bottom: 2.5%;
+    color: rgba(3, 128, 94);
+    margin-bottom: 2%;
   }
 
   #superman{
-    transform: rotate(-60deg);
+    transform: rotate(-67deg);
     width: 42px;
+    padding: 0;
+    margin: 0;
   }
 
-  #skills-content{
-    margin-top: 2.5%;
-  }
-
-  #skills-content h4{
-    width: 30%;
+  #abilities-content{
+    margin-top: 0%;
     display: flex;
-    font-size: 1.5em;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    text-transform: uppercase;
-    align-items: center;
+    justify-content: center;
   }
 
-  #skills-content h4:hover{
-      font-weight: 400;
-      cursor: pointer;
-  }
-
-  #skills-content div{
-    padding-top: 5%;
+  #abilities-content div{
     padding-bottom: 3%;
     display: flex;
     align-items: center;
   }
 
-  .row-wrap{
-    flex-flow: row wrap;
+  #tools{
+    margin: 0px 150px 0px 200px;
+  }
+
+  #skills{
+    margin: 0px 150px 0px 100px;
+  }
+
+  #languages{
+    margin: 0px 150px 0px 100px;
+  }
+
+  #abilities-content h4{
+    width: 30%;
+    display: flex;
+    font-size: 1.5em;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    align-items: center;
+    margin: 0px 27px 0px 27px;
+    color: rgba(3, 128, 94);
+  }
+
+  #abilities-content h4:hover{
+    cursor: pointer;
+    color: black;
+  }
+
+  .column{
+    display: flex;
+    flex-flow: column;
   }
 
   .space-around{
+    display: flex;
     justify-content: space-around;
   }
 
-  #skills-content div h3{
-      position: absolute;
+  #abilities-content div h3{
       font-family: 'Roboto', sans-serif;
-      font-style: italic;
+      font-style: normal;
       text-transform: uppercase;
-      font-size: 120px;
-      color: rgba(171, 183, 183, .7);
-      z-index: -1;
-      letter-spacing: 30px;
+      font-size: 40px;
+      color:black;
   }
 
-  #skills-content div div{
+  #abilities-content div div{
     display: flex;
     flex-direction: column;
   }
 
-  #skills-content div h5{
-    font-size: 20px;
+  #abilities-content div h5{
+    font-size: 17px;
     margin-bottom: 5%;
     font-weight: 400;
+    text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
+    color:black;
+  }
+
+  .xp-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0% 5% 0%;
+    width: 100vw;
   }
 
   /*Parallax effect section 2*/
 
   .parallax{
-    background-image: linear-gradient(rgba(1,1,1,.7),rgba(1,1,1,.7)), url(../images/milky-way-1023340_1920.jpg);
+    background-image: linear-gradient(to bottom, rgba(3, 128,94, .1),rgba(3, 128,94, .3)), url(../images/milky-way-1023340_1920.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
