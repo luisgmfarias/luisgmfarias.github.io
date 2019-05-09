@@ -3,9 +3,9 @@
     padding: 0;
     border: 0;
     scroll-behavior: smooth;
-  }
+}
 
-  body{
+body{
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -15,284 +15,129 @@
     overflow-x: hidden;
     width: 100vw;
     height: 300vh;
-    perspective: 1.1px;
-  }
+    font-family: "Roboto", sans-serif;
+}
 
-  .container{
+.container{
     width: 100vw;
     height: 100vh;
-  }
+}
 
-  .home-container{
-    background-color: white;
-    background-position:center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  header{
-    margin-top:5px;
-    animation-delay: 1s;
-  }
-
-  header a{
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    color:rgba(3, 128,94, 1);
-    font-size: 20px;
-    margin: 0px 20px 0px 20px;
-    padding:5px 10px 5px 10px;
-
-  }
-
-  header a:hover{
-    background-color: rgba(3, 128,94, 1);;
-    color: white;
-    transition: all 1s ease;
-  }
-
-  #presentation{
-    border-bottom: 2px solid rgba(3, 128,94, 1);;
-    padding: 5% 10% 3% 10%;
-  }
-
-  .home-container div div{
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-  }
-
-  #rocket{
+.sub-container{
     width: 100vw;
-    position: fixed;
-    align-items: flex-start;
-    animation-delay: 0.3s;
-  }
+    height: 60vh;
+}
 
-  .home-container img{
-    width: 90px;
-    transform: rotate(45deg);
-  }
-
-  .home-container h1{
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: bolder;
-    color: rgba(3, 128,94, 1);
-    font-size: 80px;
-    animation-delay: 0.2s;
-  }
-
-  .home-container span{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 50;
-    font-style: italic;
-    color:black;
-  }
-
-  .home-container h3{
-    font-family: 'Open Sans',sans-serif;
-    font-size: 28px;
-    color: rgba(3, 128,94, 1);
-    text-transform: lowercase;
-    animation-delay: 0.6s;
-    text-align: center;
-  }
-
-  .bio-container{
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position:center;
-    color: white;
-  }
-
-  .bio-container div{
-    text-align: center;
-  }
-
-  .bio-container h3{
-    font-family: "Roboto", sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 50px;
-    margin-bottom: 5%;
-  }
-
-  #saturn{
-    width: 42px;
-    transition: width 5s, height 5s, transform 5s;
-  }
-
-  #saturn:hover{
-    transform: rotate(720deg);
-  }
-
-  .bio{
+#home{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin: 0px 250px 0px 250px;
-  }
+    
+}
 
-  .bio p{
-    font-family: "Roboto", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-    text-align: right;
-    text-transform: uppercase;
-    width: 40%;
-    margin-right: 2%;
-  }
-
-  #perfil{
-    width: 200px;
-    border-radius: 50%;
-    border:2px solid white;
-  }
-
-  .bio div{
-    text-align: left;
-    margin-left: 2%;
-    font-size: 18px;
-  }
-
-  .bio h4{
-    font-family: "Roboto", sans-serif;
-    margin:1% 0% 1% 0%;
-    font-weight: bold;
-  }
-
-  .bio span{
-    font-weight: 200;
-    font-style: italic;
-  }
-
-  .abilities-container{
-    text-align: center;
+#home div {
     display: flex;
     flex-direction: column;
-    padding: 5% 0% 5% 0%;
-    color:black;
-  }
-
-  .abilities-container div h3{
-    font-family: "Roboto", sans-serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-style: italic;
-    font-size: 50px;
-    letter-spacing: -1px;
-    color: rgba(3, 128, 94);
-    margin-bottom: 2%;
-  }
-
-  #superman{
-    transform: rotate(-67deg);
-    width: 42px;
-    padding: 0;
-    margin: 0;
-  }
-
-  #abilities-content{
-    margin-top: 0%;
-    display: flex;
     justify-content: center;
-  }
+}
 
-  #abilities-content div{
-    padding-bottom: 3%;
-    display: flex;
-    align-items: center;
-  }
+.margin-left-2vw{
+    margin-left: 2vw;
+}
 
-  #tools{
-    margin: 0px 150px 0px 200px;
-  }
+#home div div{
+    width: 32vw;
+    margin-bottom: 20vh;
+}
 
-  #skills{
-    margin: 0px 150px 0px 100px;
-  }
+img{
+    width: 45vw;
+}
 
-  #languages{
-    margin: 0px 150px 0px 100px;
-  }
+h1{
+    color: #17C982;
+    font-weight: 700;
+    font-size: 135px;
+    letter-spacing: -6px;
+}
 
-  #abilities-content h4{
-    width: 30%;
-    display: flex;
-    font-size: 1.5em;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    align-items: center;
-    margin: 0px 27px 0px 27px;
-    color: rgba(3, 128, 94);
-  }
+h2{
+    color:black;
+    font-weight: 700;
+    font-size: 65px;
+}
 
-  #abilities-content h4:hover{
-    cursor: pointer;
+header a{
+    margin-right: 1vw;
     color: black;
-  }
+    font-weight: 300;
+    font-size: 36px;
+    text-decoration: none;
+}
 
-  .column{
+header a:hover{
+    color: #17C982;
+}
+
+
+#profile{
     display: flex;
-    flex-flow: column;
-  }
+    flex-direction: row;
+}
 
-  .space-around{
-    display: flex;
-    justify-content: space-around;
-  }
+#profile div li{
+    font-size: 20px;
+    list-style: none;
+    text-align: right;
+    color: black;
+}
 
-  #abilities-content div h3{
-      font-family: 'Roboto', sans-serif;
-      font-style: normal;
-      text-transform: uppercase;
-      font-size: 40px;
-      color:black;
-  }
+#profile img{
+    width: 225px;
+    border-radius: 50%;
+    border:2px solid transparent;
+    float: right;
+    margin-bottom: 1vh;
+}
 
-  #abilities-content div div{
-    display: flex;
-    flex-direction: column;
-  }
-
-  #abilities-content div h5{
-    font-size: 17px;
-    margin-bottom: 5%;
+#profile p{
+    width: 820px;
+    font-size: 32px;
     font-weight: 400;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    color:black;
-  }
+    color: white;
+}
 
-  .xp-container{
-    text-align: center;
+#white-bg{
+    background-color: white;
+    height: 60vh;
+    width: 45vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1vw;
+}
+
+#green-bg{
+    background-color: #17C982;
+    height: 60vh;
+    width: 55vw;
+    padding-left: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+strong{
+    font-weight: 700;
+}
+
+.column{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5% 0% 5% 0%;
-    width: 100vw;
-  }
+}
 
-  /*Parallax effect section 2*/
+.pd-right-1vw{
+    padding-right: 1vw;
+}
 
-  .parallax{
-    background-image: linear-gradient(to bottom, rgba(3, 128,94, .1),rgba(3, 128,94, .3)), url(../images/milky-way-1023340_1920.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-
-  }
-  .parallax-inner{
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
+.pd-left-1vw{
+    padding-left: 1vw;
+}
