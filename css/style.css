@@ -31,41 +31,36 @@ body{
 #home{
     display: flex;
     flex-direction: row;
-    
-}
-
-#home div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.margin-left-2vw{
-    margin-left: 2vw;
 }
 
 #home div div{
-    width: 32vw;
-    margin-bottom: 20vh;
+    width: 33vw;
 }
 
-img{
+#home-box{
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 15vh;
+}
+
+#home img{
     width: 45vw;
 }
 
-h1{
+#home-box h1{
     color: #17C982;
     font-weight: 700;
-    font-size: 135px;
+    font-size: 7rem;
     letter-spacing: -6px;
 }
 
-h2{
+#home-box h2{
     color:black;
     font-weight: 700;
-    font-size: 65px;
+    font-size: 2rem;
 }
-
 header a{
     margin-right: 1vw;
     color: black;
@@ -85,7 +80,7 @@ header a:hover{
 }
 
 #profile div li{
-    font-size: 20px;
+    font-size: 1em;
     list-style: none;
     text-align: right;
     color: black;
@@ -100,8 +95,7 @@ header a:hover{
 }
 
 #profile p{
-    width: 820px;
-    font-size: 32px;
+    font-size: 1.5em;
     font-weight: 400;
     color: white;
 }
@@ -112,15 +106,13 @@ header a:hover{
     width: 45vw;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    padding-right: 1vw;
+    align-items: center
 }
 
 #green-bg{
     background-color: #17C982;
     height: 60vh;
     width: 55vw;
-    padding-left: 1vw;
     display: flex;
     align-items: center;
 }
@@ -134,10 +126,10 @@ strong{
     flex-direction: column;
 }
 
-.pd-right-1vw{
-    padding-right: 1vw;
-}
-
 .pd-left-1vw{
     padding-left: 1vw;
+}
+
+.pd-right-1vw{
+    padding-right: 1vw;
 }
