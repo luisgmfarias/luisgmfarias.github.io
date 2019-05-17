@@ -12,7 +12,6 @@ body{
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    overflow-x: hidden;
     width: 100vw;
     font-family: "Roboto", sans-serif;
 }
@@ -61,6 +60,10 @@ body{
     flex-wrap: wrap;
 }
 
+.flow-wrap{
+    flex-flow: wrap column;
+}
+
 .space-between{
     justify-content: space-between;
 }
@@ -71,6 +74,10 @@ body{
 
 .justify-center{
     justify-content: center;
+}
+
+.justify-end{
+    justify-content: flex-end   ;
 }
 
 .align-center{
@@ -84,16 +91,40 @@ body{
     text-align: start;
 }
 
-.pd-left-1vw{
-    padding-left: 1vw;
+.text-justify{
+    text-align: justify;
 }
 
-.pd-left-2vw{
-    padding-left: 2vw;
+.text-end{
+    text-align: end;
 }
 
-.pd-right-2vw{
-    padding-right: 2vw;
+.title{
+    font-size: 2.5rem;
+}
+
+.white{
+    color: white;
+}
+
+.gold{
+    color: #DAA520;
+}
+
+.ptop{
+    padding-top: 5vh;
+}
+
+.light{
+    font-weight: 300;
+}
+
+.normal{
+    font-weight: 400;
+}
+
+.bold{
+    font-weight: 500;
 }
 
 
@@ -135,32 +166,27 @@ header a:hover{
     background-size: cover;
     background-attachment: fixed;
     background-repeat: repeat;
+    display: flex;
+    justify-content: flex-end;
 }
 #profile-bg{
-    color: white;
-    padding-top: 20vh;
+    padding-right: 5vw;
 }
 
 #profile-bg div{
-    width: 75vw;
+    width: 45vw;
 }
 #profile-bg p{
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 2vh 4vw 2vh 4vw;
-    font-size: 1.5em;
-    font-weight: 300;
-    font-style: italic;
-    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: justify; 
+    background-color: rgb(255, 255, 255,.9);
+    padding: 1% 2% 1% 2%;
+    border-radius: 2px;
 }
 
 #profile-bg strong{
     font-size: 7rem;
-    color:rgba(218, 165, 32,1);
-}
-
-#profile-bg p strong{
-    font-size: 1.5rem;
-    font-weight: 700;
 }
 
 #profile-bg strong:nth-child(1){
@@ -173,9 +199,8 @@ header a:hover{
 }
 #abilities{
     background-color: #DAA520;
-    padding: 5% 3% 0% 3%;
+    padding-top: 5%;
     align-items: center;
-    color: white;
 }
 
 #abilities div{
@@ -187,8 +212,7 @@ header a:hover{
 }
 
 #abilities div h2{
-    font-size: 2.3rem;
-    font-style: italic;
+    text-align: justify;
     margin-bottom: 10vh;
 }
 
@@ -201,11 +225,10 @@ header a:hover{
     font-weight: 400;
 }
 
-
 #abilities div div a{
     text-decoration: none;
-    color: white;
     display: inline-block;
+    color: white;
 }
 
 #abilities div div a:after{
@@ -233,10 +256,9 @@ header a:hover{
     margin-right:5%;
 }
 
-#resume a{
-    color: white;
+
+#resume{
     text-decoration: none;
-    font-style: normal;
     font-size: 1.2em;
     font-weight: 700;
     border: 2px solid white;
@@ -244,11 +266,71 @@ header a:hover{
     padding: 2% 2% 2% 2%;
 }
 
-#resume a:hover{  
+#resume:hover{  
     background-color: #fff;
     color: #DAA520;
 }
 
 .border{
-    border:1px solid black
+    border:1px solid white;
 }
+
+#xp{
+    background-color: black;
+    height: 200vh;
+}
+
+#xp h2{
+    margin:0% 0% 5% 0%;
+}
+
+#xp div div div h3{
+    border-bottom:2px solid #DAA520;
+    font-size: 1.5em;
+}
+
+#xp div div{
+    font-size: 1.1em;
+}
+
+#xp h4{
+    font-size: 1.15 em;
+}
+
+#xp div div div p{
+    width: 50vw;
+    text-align: justify;
+    font-weight: 300;
+}
+
+#xp div div strong{
+    font-weight: 400;
+}
+
+#xp div h3{
+    font-size: 2rem;
+    padding-bottom: 5vh;
+    text-transform: uppercase;
+    border-bottom: 3px solid #DAA520;
+}
+
+#xp img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+#xp img:hover{
+    filter: grayscale(0%);
+    transition:all .5s ease-in;
+    object-fit: cover;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
