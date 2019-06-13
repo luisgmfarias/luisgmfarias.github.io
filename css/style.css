@@ -5,6 +5,7 @@
     scroll-behavior: smooth;
 }
 
+
 body{
     display: -webkit-flex;
     display: -ms-flex;
@@ -15,6 +16,22 @@ body{
     overflow-x: hidden;
     width: 100vw;
     font-family: "Roboto", sans-serif;
+}
+
+.no-js #loader {
+    display: none;  
+}
+.js #loader {
+    display: block; position: absolute; left: 100px; top: 0;
+}
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/loading.gif) center no-repeat #fff;
 }
 
 /* width */
@@ -61,10 +78,6 @@ body{
     flex-wrap: wrap;
 }
 
-.flow-wrap{
-    flex-flow: wrap column;
-}
-
 .space-between{
     justify-content: space-between;
 }
@@ -92,10 +105,6 @@ body{
     text-align: start;
 }
 
-.text-justify{
-    text-align: justify;
-}
-
 .text-end{
     text-align: end;
 }
@@ -116,22 +125,14 @@ body{
     padding-top: 5vh;
 }
 
-.light{
-    font-weight: 300;
-}
-
-.normal{
-    font-weight: 400;
-}
-
-.bold{
-    font-weight: 500;
-}
-
 .border{
     border:1px solid white;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 
 
 #home{
@@ -154,14 +155,14 @@ body{
     font-weight: 700;
     font-size: 2rem;
 }
-header a{
+nav a{
     color: white;
     font-weight: 300;
     font-size: 1.7em;
     text-decoration: none;
 }
 
-header a:hover{
+nav a:hover{
     color:rgb(218, 165, 32);
 }
 
@@ -231,10 +232,25 @@ header a:hover{
     font-weight: 400;
 }
 
+.no-js #loader { display: none;  }
+
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+}
+
 #abilities div div a{
     text-decoration: none;
     display: inline-block;
     color: white;
+    cursor: pointer;
 }
 
 #abilities div div a:after{
@@ -261,7 +277,6 @@ header a:hover{
     width: 40px;
     margin-right:5%;
 }
-
 
 #resume{
     text-decoration: none;
@@ -310,7 +325,6 @@ header a:hover{
 
 #xp div h3{
     font-size: 2rem;
-    padding-bottom: 5vh;
     text-transform: uppercase;
     border-bottom: 3px solid #DAA520;
 }
@@ -329,30 +343,18 @@ header a:hover{
     transition:all .5s ease-in;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
 #contact{
     background-color: white;
     color: black;
-    padding-top: 5%;
+    height: 50vh;
 }
 
 #contact h2{
     font-size: 3rem;
-    margin-bottom: 3%;
 }
 
 #medias div{
     width: 25vw;
-}
-
-#medias h3{
-    font-size: 2rem;
-    font-weight: 300;
-    margin: 15% 0% 15% 0%;
 }
 
 #medias svg{
@@ -362,6 +364,11 @@ header a:hover{
 
 #contact svg{
     margin: 0% 5% 0% 5%;    
+}
+
+#contact svg:hover{
+    transform: rotate(360deg);
+    transition:all 1s ease-in;
 }
 
 #contact a{

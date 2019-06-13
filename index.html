@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <script type="text/javascript">$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+    </script>
     <title>Luís Farias</title>
 </head>
 <body>
+    <div class="se-pre-con"></div>
     <section id="home" class="container row wrap justify-center">
         <div id="home-box" class="column space-around">
             <div>
@@ -17,12 +25,12 @@
                 <h2>a creative and </h2> 
                 <h2> curious professional</h2>
             </div>
-            <header class="row space-between text-center">
+            <nav class="row space-between text-center">
                 <a href="#profile-bg">profile</a>
                 <a href="#abilities">abilities</a>
                 <a href="#xp">experiences</a>
                 <a href="#contact">contact</a>
-            </header>
+            </nav>
         </div>
 
     </section>
@@ -53,13 +61,13 @@
                     <h3>Getting into my skillset</h3>
                 </div>
                 <ul class="row space-between">
-                    <li><a href="">Python</a></li>
-                    <li><a href="">HTML5</a></li>
-                    <li><a href="">CSS3</a></li>
-                    <li><a href="">Illustrator</a></li>
-                    <li><a href="">Photoshop</a></li>
-                    <li><a href="">Java</a></li>
-                    <li><a href="">Linux</a></li>
+                    <li><a>Python</a></li>
+                    <li><a>HTML5</a></li>
+                    <li><a>CSS3</a></li>
+                    <li><a>Illustrator</a></li>
+                    <li><a>Photoshop</a></li>
+                    <li><a>Java</a></li>
+                    <li><a>Linux</a></li>
                 </ul>
             </div>
 
@@ -69,11 +77,11 @@
                     <h3>Some tools I'm used to</h3>
                 </div>
                 <ul class="row space-between">
-                    <li><a href="">VSCode</a></li>
-                    <li><a href="">Adobe XD</a></li>    
-                    <li><a href="">Atom</a></li>
-                    <li><a href="">Windows</a></li>
-                    <li><a href="">Netbeans</a></li>
+                    <li><a>VSCode</a></li>
+                    <li><a>Adobe XD</a></li>    
+                    <li><a>Atom</a></li>
+                    <li><a>Windows</a></li>
+                    <li><a>Netbeans</a></li>
                 </ul>
             </div>
 
@@ -100,7 +108,7 @@
             
         </div>
 
-        <a id="resume" href="" class="white" download>CLICK HERE AND GET MY UPDATED RESUME</a>
+        <a id="resume" href="./assets/curriculum_LuisG_v5.pdf" class="white" download>CLICK HERE AND GET MY UPDATED RESUME</a>
     </section>
 
     <section id="xp" class="container column space-around">
@@ -188,11 +196,10 @@
         </div>
     </section>
 
-    <section id="contact" class="sub-container text-center column align-center">
+    <section id="contact" class="text-center column space-around ptop">
         <h2>Let's keep in touch!</h2>
         <a class="gold" href="mailto:luisfarias@alunos.utfpr.edu.br"> <strong>luisfarias</strong>@alunos.utfpr.edu.br</a>
-        <div id="medias" class="column space-between align-center">
-            <h3 class="black">Medias</h3>
+        <div id="medias" class="column align-center">
             <div class="row space-around">
                 <a href="">
                     <svg version="1.1" id="git" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
