@@ -18,22 +18,6 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
-.no-js #loader {
-    display: none;  
-}
-.js #loader {
-    display: block; position: absolute; left: 100px; top: 0;
-}
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(../images/loading.gif) center no-repeat #fff;
-}
-
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -41,7 +25,7 @@ body{
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: transparent;
+    background: black;
 }
 
 /* Handle */
@@ -51,7 +35,7 @@ body{
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: white; 
+    background:white; 
 }
 
 .container{
@@ -133,6 +117,19 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+
+#content{
+    display: none;
+}
+
+#preloader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    overflow: visible;
+    background: url('../images/loading.gif') no-repeat center center black;
+ }
 
 
 #home{
@@ -232,20 +229,6 @@ nav a:hover{
     font-weight: 400;
 }
 
-.no-js #loader { display: none;  }
-
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
-}
-
 #abilities div div a{
     text-decoration: none;
     display: inline-block;
@@ -283,7 +266,6 @@ nav a:hover{
     font-size: 1.2em;
     font-weight: 700;
     border: 2px solid white;
-    border-radius: 2%;
     padding: 2% 2% 2% 2%;
 }
 
@@ -358,17 +340,13 @@ nav a:hover{
 }
 
 #medias svg{
-    width: 60px;
-    height: 60px;
-}
-
-#contact svg{
-    margin: 0% 5% 0% 5%;    
+    width: 50px;
+    height: 50px;
 }
 
 #contact svg:hover{
     transform: rotate(360deg);
-    transition:all 1s ease-in;
+    transition:all .7s ease-in;
 }
 
 #contact a{
