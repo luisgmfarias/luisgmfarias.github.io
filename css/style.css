@@ -6,15 +6,10 @@
 }
 
 
-body{
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+html, body{
     overflow-x: hidden;
-    width: 100vw;
+    margin: 0;
+    padding: 0;
     font-family: "Roboto", sans-serif;
 }
 
@@ -113,14 +108,14 @@ body{
     border:1px solid white;
 }
 
-.grid{
+#works{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-#content{
+/*#content{
     display: none;
-}
+}*/
 
 #preloader {
     position: fixed;
@@ -152,6 +147,14 @@ body{
     font-weight: 700;
     font-size: 2rem;
 }
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
 nav a{
     color: white;
     font-weight: 300;
@@ -175,6 +178,7 @@ nav a:hover{
 }
 #profile-bg{
     padding-right: 5vw;
+    justify-content: flex-end;
 }
 
 #profile-bg div{
@@ -212,12 +216,12 @@ nav a:hover{
 }
 
 #abilities div div{
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
 }
 
 #abilities div h2{
     text-align: justify;
-    margin-bottom: 10vh;
 }
 
 #abilities h3{
@@ -258,7 +262,7 @@ nav a:hover{
 
 #abilities img{
     width: 40px;
-    margin-right:5%;
+    margin-right:0%;
 }
 
 #resume{
@@ -384,6 +388,75 @@ nav a:hover{
 }
 
 @media only screen and (max-width : 1180px) {
+
+    #home-box h1{
+        font-size: 5rem;
+    }
+
+    #home box h2{
+        font-size: 1.5em;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #profile{
+        background-size: 250%;
+        background-position: 0 0;
+        justify-content: center;
+    }
+    #profile-bg{
+        padding-right: 0;
+    }
+
+    #profile-bg div{
+        width: 80vw;
+    }
+
+    #profile-bg p{
+        font-size: 1em;
+    }
+
+    #abilities div{
+        width: 90vw;
+    }
+
+    #abilities h2{
+        text-align: center;
+    }
+
+    #abilities img{
+        margin-right: 10px;
+    }
+    #abilities div div{
+        margin-bottom: 0%;
+    }
+
+    #resume{
+        text-align: center;
+        margin: 0px 10px 0px 10px;   
+        
+    }
+    #xp div h2{
+        text-align: center;
+        width: 80vw;
+    }
+
+    #xp div div h3{
+        text-align: center;
+    }
+
+    #xp div div div{
+        width: 90vw;
+    }
+
+    #xp div div div p{
+        width: 90vw;
+        text-align: justify;
+        font-weight: 300;
+    }
 
 }
 
