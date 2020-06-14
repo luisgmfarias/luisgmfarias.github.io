@@ -1,7 +1,29 @@
-images/abdução_2019.png
-images/ACABADOS.png
-images/acabados2019.png
-images/coffe.jpg
-images/conquistar.png
-images/moralizador.png
-images/sicov_logo.png
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+/src/assets/fonts/coolvetica compressed rg.ttf
+/src/assets/fonts/coolvetica condensed rg.ttf
+/src/assets/fonts/coolvetica crammed rg.ttf
+
+
