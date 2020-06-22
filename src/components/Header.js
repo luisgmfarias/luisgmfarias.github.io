@@ -5,12 +5,12 @@ const HeaderContainer = styled.div`
   background: transparent;
   display: flex;
   width: 100vw;
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
   flex-wrap:wrap;
 `;
 
 const Name = styled.h1`
-  color: rgba(27, 242, 221, 1);
+  color: white;
   font-size: 40px;
   margin-left: 60px;
 `;

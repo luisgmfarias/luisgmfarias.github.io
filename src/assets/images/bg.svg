@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2538" width="1920" height="2538">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M0 -2076L1920 -2076L1920 3030L0 3030Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #1bf2dd } 
+	</style>
+	<g id="luisgmfarias.github.io" clip-path="url(#cp1)">
+		<path id="Caminho 13" class="shp0" d="M0 0C0 0 109.18 193.73 433.96 153.38C758.74 113.02 832.08 366.69 1142.89 153.38C1302.03 44.16 1495.26 94.89 1652.76 84.19C1768.01 89.96 1920 0 1920 0L1920 2538L0 2538L0 0Z" />
+	</g>
+</svg>
