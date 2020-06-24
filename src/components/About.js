@@ -62,7 +62,8 @@ function About() {
             style={{ marginRight: "10px", marginBottom: "15px" }}
           />
           <SkillsDesc>
-            I like to code things, matching design purposes
+            I am always looking foward when coding, looking for creative
+            solutions, just as I love solving problems.
           </SkillsDesc>
         </Col>
         <Col style={{ alignItems: "center" }}>
@@ -72,7 +73,9 @@ function About() {
             style={{ marginRight: "15px", marginBottom: "15px" }}
           />
           <SkillsDesc>
-            I think data visualization is the best way to prove your idea
+            I think data visualization is the best way to prove your idea. I
+            know how important data is today and how far we can go with that
+            power in our hands.
           </SkillsDesc>
         </Col>
         <Col style={{ alignItems: "center" }}>
@@ -82,8 +85,8 @@ function About() {
             style={{ marginRight: "15px", marginBottom: "15px" }}
           />
           <SkillsDesc>
-            I design as a hobbie, but I am always open to learn more. So I can
-            use it professionally.
+            I design as a hobbie, but I love to use that knowledge,
+            professionally.
           </SkillsDesc>
         </Col>
       </Row>

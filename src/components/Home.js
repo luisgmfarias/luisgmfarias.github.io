@@ -1,6 +1,8 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import myImage from "../assets/images/perfil.png";
+import gitIcon from "../assets/images/github.svg";
+import linkedinIcon from "../assets/images/linkedin.svg";
 
 const Slogan = styled.h1`
   text-align: left;
@@ -15,13 +17,18 @@ const Photo = styled.img`
 
 const Row = styled.div`
   margin-top: 10%;
-  padding:10px;
+  padding: 10px;
   width: 80%;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+`;
+
+const Icons = styled.img`
+  width: 30px;
+  cursor: pointer;
 `;
 
 function Home() {
@@ -34,6 +41,21 @@ function Home() {
             Hi, I'm <strong> Luís</strong>.
           </Slogan>
           <Slogan>I'm a creative developer.</Slogan>
+          <div
+            style={{
+              width: "80px",
+              display: "flex",
+              justifyContent: "space-between",
+              margin: "10px 0",
+            }}
+          >
+            <a href="https://github.com/luisgmfarias">
+              <Icons src={gitIcon} />
+            </a>
+            <a href="https://linkedin.com/in/luisgmfarias">
+              <Icons src={linkedinIcon} />
+            </a>
+          </div>
         </div>
       </Row>
 

@@ -18,12 +18,11 @@ const Project = styled.a`
 `;
 
 const More = styled.div`
-  padding: ${(props) => (props.seemore ? "0" : "15px")};
-  margin: ${(props) => (props.seemore ? "0" : "30px 0")};
-  background: ${(props) => (props.seemore ? "transparent" : "white")};
+  padding: 15px;
+  margin: 30px 15px 0 0;
+  background: white;
   width: 50%;
-  filter: ${(props) =>
-    props.seemore ? "none" : "drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.3))"};
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.3));
   text-align: center;
   border-radius: 10px;
   position: relative;
@@ -84,7 +83,7 @@ const companies = {
     "São José dos Campos, SP",
     "Cornélio Procópio, PR",
     "Greenbelt, MD",
-  ]
+  ],
 };
 
 class Works extends Component {
@@ -98,9 +97,22 @@ class Works extends Component {
 
   render() {
     let content = (
-      <More seemore>
-        <span>click on a project above to see more</span>
-      </More>
+      <>
+        <Scribble src={scribble} />
+        <More>
+          <h1>{companies.name[0]}</h1>
+          <h2>{companies.pos[0]}</h2>
+          <p>{companies.desc[0]}</p>
+          <strong>{companies.local[0]}</strong>
+        </More>
+        <a
+          className="indicator"
+          style={{ transform: "rotate(-45deg)", cursor:"pointer", margin:"0" }}
+          onClick={(e) => this.handler(e, this.state.pick + 1)}
+        >
+          <span></span>
+        </a>
+      </>
     );
 
     if (this.state.pick != null) {
@@ -113,8 +125,19 @@ class Works extends Component {
             <p>{companies.desc[this.state.pick]}</p>
             <strong>{companies.local[this.state.pick]}</strong>
           </More>
+          <a
+            className="indicator"
+            style={{ transform: "rotate(-45deg)", cursor:"pointer", margin:"0" }}
+            onClick={(e) => this.handler(e, this.state.pick + 1)}
+          >
+            <span></span>
+          </a>
         </>
       );
+    }
+
+    if (this.state.pick > companies.name.length - 1) {
+      this.setState({ pick: 0 });
     }
     return (
       <ProjectsContainer>
@@ -132,9 +155,9 @@ class Works extends Component {
           style={{
             display: "flex",
             flexDirection: "row",
-            alignItems:"center",
+            alignItems: "center",
             width: "100%",
-            height:"320px",
+            height: "320px",
             marginTop: "5%",
           }}
         >
