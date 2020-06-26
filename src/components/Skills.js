@@ -14,6 +14,11 @@ const Background = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 18% 0 5% 0;
+  text-align:center;
+  @media(max-width:800px){
+    padding:25% 0% 5% 0;
+    
+  }
 `;
 
 const SkillsContainer = styled.div`
@@ -22,7 +27,7 @@ const SkillsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   font-size: 3em;
-  color: rgba(44, 35, 102, 1);
+  color: rgba(44, 35, 102, 1);  
 `;
 
 const SkillsContent = styled.div`
@@ -31,23 +36,31 @@ const SkillsContent = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media(max-width:800px){
+    flex-direction:column;
+    font-size:30px;
+  }
 `;
 
 const Computer = styled.img`
   position: relative;
   top: 200px;
   width: 500px;
+  @media(max-width:800px) {
+    top:120px;
+    width:300px;  
+  }
 `;
 
 function Skills() {
   return (
     <>
-      <Computer src={computer} />
+      <Computer src={computer} alt="computer"/>
       <Background>
         <h1
           style={{
             fontSize: "65px",
-            marginBottom: "7%",
+            marginBottom: "5%",
             color: "rgba(44,35,102,1)",
             textDecoration: "underline",
           }}

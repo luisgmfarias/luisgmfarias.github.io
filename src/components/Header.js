@@ -7,12 +7,23 @@ const HeaderContainer = styled.div`
   width: 100vw;
   padding: 40px 0 20px 0;
   flex-wrap:wrap;
+  @media(max-width:800px){
+    padding:0 0 0 0;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+  }
 `;
 
 const Name = styled.h1`
   color: white;
   font-size: 40px;
   margin-left: 60px;
+  @media(max-width:800px){
+    font-size:55px;
+    margin-top:20px;
+    margin-left:0;
+  }
 `;
 
 const Menu = styled.div`
@@ -22,10 +33,12 @@ const Menu = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 16%;
   justify-content: space-between;
   text-align: center;
   flex-wrap:wrap;
+  @media(max-width:800px){
+    margin:10px auto;
+  }
 `;
 
 const Button = styled.a`
@@ -50,7 +63,6 @@ function Header() {
     <HeaderContainer>
       <Name>Luís Farias</Name>
       <Menu>
-        <Button>Contact</Button>
         <Button resume>Resume</Button>
       </Menu>
     </HeaderContainer>

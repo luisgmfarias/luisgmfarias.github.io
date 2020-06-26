@@ -3,10 +3,16 @@ import styled from "styled-components";
 import scribble from "../assets/images/doodle.svg";
 
 const ProjectsContainer = styled.div`
-  width: 60%;
-  margin-top: 5%;
+  width: 80%;
   font-size: 40px;
+  margin-top:5%;
   color: rgba(44, 35, 102, 1);
+  p{
+    text-align:left;
+    @media(max-width:800px){
+      font-size:32px;
+    }
+  }
 `;
 
 const Project = styled.a`
@@ -19,29 +25,42 @@ const Project = styled.a`
 
 const More = styled.div`
   padding: 15px;
-  margin: 30px 15px 0 0;
+  margin: 25px 15px 15px 0;
   background: white;
   width: 50%;
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.3));
   text-align: center;
   border-radius: 10px;
-  position: relative;
   z-index: 998;
+  @media(max-width:800px){
+    width:85%;
+    margin-left:auto;
+  }
   h1 {
     font-size: 40px;
     color: #662838;
+    @media(max-width:800px){
+      font-size:35px;
+    }
   }
   h2 {
     font-size: 25px;
     font-family: "Open Sans";
+    @media(max-width:800px){
+      font-size:20px;
+    }
   }
   p {
     font-size: 20px;
     font-family: "Open Sans";
+    text-align:center;
   }
   strong {
     color: rgba(44, 35, 102, 1);
     font-size: 20px;
+    @media(max-width:800px){
+      font-size:15px;
+    }
   }
   span {
     font-size: 25px;
@@ -53,23 +72,17 @@ const Scribble = styled.img`
   position: relative;
   z-index: -1;
   width: 150px;
+  @media(max-width:800px){
+    display:none;
+  }
 `;
-
-// const Logo = styled.img`
-//   position: relative;
-//   z-index: -1;
-//   width: 150px;
-//   height:150px;
-//   margin:auto 0;
-//   filter:opacity(20%);
-// `;
 
 const companies = {
   name: ["Mais Retorno", "Quero Educação", "UTFPR", "NASA"],
   pos: [
     "Front End Developer Intern",
     "Summer Intern",
-    "Undergrad Research Program",
+    "Research Program",
     "College Research Visitor",
   ],
   desc: [
@@ -98,7 +111,7 @@ class Works extends Component {
   render() {
     let content = (
       <>
-        <Scribble src={scribble} />
+        <Scribble src={scribble} alt="scribble-vector"/>
         <More>
           <h1>{companies.name[0]}</h1>
           <h2>{companies.pos[0]}</h2>
@@ -118,7 +131,7 @@ class Works extends Component {
     if (this.state.pick != null) {
       content = (
         <>
-          <Scribble src={scribble} />
+          <Scribble src={scribble} alt="scribble-vector" />
           <More>
             <h1>{companies.name[this.state.pick]}</h1>
             <h2>{companies.pos[this.state.pick]}</h2>
@@ -156,9 +169,7 @@ class Works extends Component {
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
-            width: "100%",
-            height: "320px",
-            marginTop: "5%",
+            width: "100%"
           }}
         >
           {content}

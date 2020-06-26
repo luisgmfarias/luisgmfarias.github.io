@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import codeIcon from "../assets/images/Icon awesome-code.svg";
 import quoteLeft from "../assets/images/Icon awesome-quote-left.svg";
 import quoteRight from "../assets/images/Icon awesome-quote-right.svg";
@@ -13,15 +13,10 @@ const Description = styled.p`
   color: white;
   font-size: 30px;
   width: 100%;
-`;
-
-const Row = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-const Col = styled.div`
-  display: flex;
-  flex-direction: column;
+  @media (max-width: 800px) {
+    text-align: center;
+    font-size: 35px;
+  }
 `;
 
 const AboutContainer = styled.div`
@@ -29,67 +24,101 @@ const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70vw;
+  width: 80vw;
 `;
 
 const SkillsDesc = styled.p`
   color: white;
   width: 20vw;
+  font-size: 18px;
+  @media (max-width: 800px) {
+    width: 50vw;
+  }
+`;
+
+const ValuesContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15%;
+  text-align: center;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+`;
+
+const ValueBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 15px 10px;
+  @media (max-width: 800px) {
+    padding: 10px 5px;
+    margin-bottom: 40px;
+  }
+`;
+
+const Quote = styled.img`
+  ${(props) =>
+    props.right &&
+    css`
+      margin-left: auto;
+    `}
+  @media(max-width:800px){
+    width:70px;
+  }
+`;
+
+const Icon = styled.img`
+  width: 35px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  @media (max-right: 800px) {
+    margin: 0;
+  }
+  ${(props) =>
+    props.code &&
+    css`
+      width: 40px;
+    `}
 `;
 
 function About() {
   return (
     <AboutContainer id="About">
       <Description>
-        <img src={quoteLeft} />I am a developer from São Paulo, Brazil. I
+        <Quote src={quoteLeft} alt="quote-left"/>I am a developer from São Paulo, Brazil. I
         currently live in Paraná where I study Software Engineering. I am a big
         fan of Data, Space Science enthusiast and web developer aspirant.
-        <img src={quoteRight} style={{ marginLeft: "90%" }} />
+        <Quote src={quoteRight} alt="quote-left" right />
       </Description>
 
-      <Row
-        style={{
-          justifyContent: "space-between",
-          width: "100%",
-          marginTop: "15%",
-          textAlign: "Center",
-        }}
-      >
-        <Col style={{ alignItems: "center" }}>
-          <img
-            src={codeIcon}
-            width="40px"
-            style={{ marginRight: "10px", marginBottom: "15px" }}
-          />
+      <ValuesContainer>
+        <ValueBlock>
+          <Icon src={codeIcon} alt="code-icon" code />
           <SkillsDesc>
-            I am always looking foward when coding, looking for creative
+            I am always looking forward when coding, looking for creative
             solutions, just as I love solving problems.
           </SkillsDesc>
-        </Col>
-        <Col style={{ alignItems: "center" }}>
-          <img
-            src={graphIcon}
-            width="35px"
-            style={{ marginRight: "15px", marginBottom: "15px" }}
-          />
+        </ValueBlock>
+        <ValueBlock>
+          <Icon src={graphIcon} alt="graph-icon"/>
           <SkillsDesc>
             I think data visualization is the best way to prove your idea. I
             know how important data is today and how far we can go with that
             power in our hands.
           </SkillsDesc>
-        </Col>
-        <Col style={{ alignItems: "center" }}>
-          <img
-            src={designIcon}
-            width="35px"
-            style={{ marginRight: "15px", marginBottom: "15px" }}
-          />
+        </ValueBlock>
+        <ValueBlock>
+          <Icon src={designIcon} alt="design-icon"/>
           <SkillsDesc>
-            I design as a hobbie, but I love to use that knowledge,
+            I design as a hobby, but I love to use that knowledge,
             professionally.
           </SkillsDesc>
-        </Col>
-      </Row>
+        </ValueBlock>
+      </ValuesContainer>
     </AboutContainer>
   );
 }

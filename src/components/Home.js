@@ -8,11 +8,18 @@ const Slogan = styled.h1`
   text-align: left;
   color: white;
   font-size: 65px;
+  @media (max-width: 800px) {
+    font-size:55px;
+    text-align: center;
+  }
 `;
 
 const Photo = styled.img`
   width: 270px;
   filter: drop-shadow(3px 6px 3px rgba(0, 0, 0, 0.3));
+  @media(max-width:800px){
+    margin-bottom:20px;
+  }
 `;
 
 const Row = styled.div`
@@ -27,35 +34,38 @@ const Row = styled.div`
 `;
 
 const Icons = styled.img`
-  width: 30px;
+  width: 40px;
   cursor: pointer;
+`;
+
+const IconsContainer = styled.div`
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  @media(max-width:800px){
+    margin:20px auto;
+  }
 `;
 
 function Home() {
   return (
     <>
       <Row>
-        <Photo src={myImage} />
+        <Photo src={myImage} alt="..." />
         <div>
           <Slogan>
             Hi, I'm <strong> Luís</strong>.
           </Slogan>
           <Slogan>I'm a creative developer.</Slogan>
-          <div
-            style={{
-              width: "80px",
-              display: "flex",
-              justifyContent: "space-between",
-              margin: "10px 0",
-            }}
-          >
+          <IconsContainer>
             <a href="https://github.com/luisgmfarias">
-              <Icons src={gitIcon} />
+              <Icons src={gitIcon} alt="git-icon" />
             </a>
             <a href="https://linkedin.com/in/luisgmfarias">
-              <Icons src={linkedinIcon} />
+              <Icons src={linkedinIcon} alt="linkedin-icon"/>
             </a>
-          </div>
+          </IconsContainer>
         </div>
       </Row>
 
