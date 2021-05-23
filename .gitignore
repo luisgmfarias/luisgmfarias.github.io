@@ -21,9 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-/src/assets/fonts/coolvetica compressed rg.ttf
-/src/assets/fonts/coolvetica condensed rg.ttf
-/src/assets/fonts/coolvetica crammed rg.ttf
-
-

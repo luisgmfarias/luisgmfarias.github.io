@@ -1,78 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 @font-face {
-    font-family: "Advent Pro";
-    font-style: normal;
-    src: url("./assets/fonts/coolvetica\ rg.ttf");
-    font-weight: 700;
+  font-family: "Pacifico", cursive;
 }
 
-@font-face{
-    font-family:'Open Sans', sans-serif;
+@font-face {
+  font-family: "Raleway", sans-serif;
 }
 
-
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    font-family: "Advent Pro";
-    overflow-x: hidden;
+*{
+  margin: 0;
 }
-
-
-
-strong {
-    color: #1bf2dd
-}
-
-/*Animação de seta para baixo!*/
-
-.indicator {
-    margin-top: 5%;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    transform:rotate(45deg);
-}
-
-
-.indicator span{
-    position: absolute;
-    top:0;
-    left:0;
-    width: 50%;
-    height: 50%;
-    display: block;
-    box-sizing: border-box;
-    border:none;
-    border-right:3px solid white;
-    border-bottom:3px solid white; 
-    animation: animate 1s linear infinite;
-}
-
-.indicator span:nth-child(1){
-    animation-delay: 0s;
-    transform: translate(0px,0px);
-}
-
-.indicator span:nth-child(2){
-    top:0px;
-    left:0px;
-    animation-delay:.1s;
-    transform: translate(15px,15px);
-}
-
-@keyframes animate{
-
-    0%{
-        border-color:#fff;
-    }
-    20%{
-        border-color:#fff;
-    }
-    20.1%, 100%{
-        border-color: transparent;
-    }
-}
-
