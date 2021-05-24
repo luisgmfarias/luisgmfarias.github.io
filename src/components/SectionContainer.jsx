@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
 const SectionContainer = styled.div`
-    padding: 300px 230px;
+    padding: 200px 230px;
     background-color:#000000;
     display: flex;
-    justify-content:center;
+
+    @media(max-width: 415px){
+        padding:150px 40px;
+    }
 `;
 
 export default SectionContainer;

@@ -1,5 +1,8 @@
-import styled from styled-components;
+import styled from "styled-components";
 
-const SectionTitle = styled.h2`
-
-`
+export const SectionTitle = styled.h2`
+  font-family: Pacifico;
+  font-size: 64px;
+  color: white;
+  letter-spacing: 2px;
+`;
