@@ -5,49 +5,54 @@ import { Row } from "../components/Utils";
 import github from "../assets/images/akar-icons_github-fill.png";
 import linkedin from "../assets/images/akar-icons_linkedin-fill.png";
 import instagram from "../assets/images/ant-design_instagram-filled.png";
+import Fade from "react-reveal/Fade";
 
 function Home() {
   return (
     <SectionContainer>
       <Row>
-        <Photo src={photo} alt="profile-photo" />
+        <Fade left>
+          <Photo src={photo} alt="profile-photo" />
+        </Fade>
+
         <Presentation>
-          <span>Hi, I am</span>
-          <h1>Luís Farias.</h1>
-          <p>
-            A creative developer focused on data, I had experience building Data
-            Engineering pipelines, AI development and Web Scraping. Based in
-            Cornélio Procópio, Brazil, studying Software Engineering.{" "}
-          </p>
+            <span>Hi, I am</span>
+            <h1>Luís Farias.</h1>
+            <p>
+              A creative developer focused on data, I had experience building
+              Data Engineering pipelines, AI development and Web Scraping. Based
+              in Cornélio Procópio, Brazil, studying Software Engineering.{" "}
+            </p>
 
-          <strong>
-            I work at <a href="https://alana.ai">Alana.ai</a> as AI Software
-            Engineer.
-          </strong>
+            <strong>
+              I work at <a href="https://alana.ai">Alana.ai</a> as AI Software
+              Engineer.
+            </strong>
 
-          <IconsContainer>
-            <a
-              href="https://github.com/luisgmfarias"
-              rel="noopener"
-              target="_blank"
-            >
-              <img src={github} alt="" />
-            </a>
-            <a
-              href="https://linkedin.com/in/luisgmfarias"
-              rel="noopener"
-              target="_blank"
-            >
-              <img src={linkedin} alt="" />
-            </a>
-            <a
-              href="https://instagram.com/luisgmfarias"
-              rel="noopener"
-              target="_blank"
-            >
-              <img src={instagram} alt="" />
-            </a>
-          </IconsContainer>
+            <IconsContainer>
+              <a
+                href="https://github.com/luisgmfarias"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img src={github} alt="" />
+              </a>
+              <a
+                href="https://linkedin.com/in/luisgmfarias"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img src={linkedin} alt="" />
+              </a>
+              <a
+                href="https://instagram.com/luisgmfarias"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img src={instagram} alt="" />
+              </a>
+            </IconsContainer>
+          
         </Presentation>
       </Row>
     </SectionContainer>
@@ -72,8 +77,8 @@ const Presentation = styled.div`
   width: 60%;
 
   @media (max-width: 415px) {
-    margin-top:30px;
-    padding:0;
+    margin-top: 30px;
+    padding: 0;
     width: 100%;
   }
 
@@ -122,10 +127,10 @@ const IconsContainer = styled.div`
   margin-top: 30px;
 
   @media (max-width: 415px) {
-      width: 80%;
-      margin: 0 auto;
-      margin-top:30px;
-    }
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 
   img {
     width: 47px;

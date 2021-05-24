@@ -1,12 +1,15 @@
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 
 function Header() {
   return (
-    <HeaderContainer>
-      <HeaderButton>Contact</HeaderButton>
-      <Logo href="http://localhost:3000">L</Logo>
-      <HeaderButton>Resume</HeaderButton>
-    </HeaderContainer>
+    <Fade top cascade>
+      <HeaderContainer>
+        <HeaderButton>Contact</HeaderButton>
+        <Logo href="http://localhost:3000">L</Logo>
+        <HeaderButton>Resume</HeaderButton>
+      </HeaderContainer>
+    </Fade>
   );
 }
 

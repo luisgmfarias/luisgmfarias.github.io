@@ -1,5 +1,5 @@
 import carbonCurve from "../assets/images/carbon_3d-curve-manual.svg";
-
+import Fade from "react-reveal/Fade";
 function CurveConnector() {
   return (
     <div
@@ -9,7 +9,9 @@ function CurveConnector() {
         justifyContent: "center",
       }}
     >
-      <img src={carbonCurve} alt="carbon-curve" />
+      <Fade>
+        <img src={carbonCurve} alt="carbon-curve" />
+      </Fade>
     </div>
   );
 }
