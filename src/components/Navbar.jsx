@@ -20,7 +20,7 @@ const HeaderButton = styled.a`
   font-family: "Raleway";
   font-size: 20px;
   color: #dcdcdc;
-  font-weight: lighter;
+  font-weight: 400;
   cursor: pointer;
 
   @media (max-width: 415px) {
@@ -49,7 +49,8 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, black, transparent);
-  padding: 10px 0;
+  background: black;
+  padding: 0x 0;
   position: fixed;
+  z-index:999
 `;

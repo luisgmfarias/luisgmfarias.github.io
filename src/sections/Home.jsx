@@ -1,21 +1,23 @@
 import SectionContainer from "../components/SectionContainer";
 import photo from "../assets/images/profile-photo.jpeg";
 import styled from "styled-components";
-import { Row } from "../components/Utils";
+import { Row, Col } from "../components/Utils";
 import github from "../assets/images/akar-icons_github-fill.png";
 import linkedin from "../assets/images/akar-icons_linkedin-fill.png";
 import instagram from "../assets/images/ant-design_instagram-filled.png";
 import Fade from "react-reveal/Fade";
+import ArrowAnimation from "../components/ArrowAnimation";
 
 function Home() {
   return (
-    <SectionContainer>
-      <Row>
-        <Fade left>
-          <Photo src={photo} alt="profile-photo" />
-        </Fade>
+    <SectionContainer style={{ paddingTop: "250px" }}>
+      <Col>
+        <Row style={{alignItems: "center"}}>
+          <Fade left>
+            <Photo src={photo} alt="profile-photo" />
+          </Fade>
 
-        <Presentation>
+          <Presentation>
             <span>Hi, I am</span>
             <h1>Luís Farias.</h1>
             <p>
@@ -52,9 +54,13 @@ function Home() {
                 <img src={instagram} alt="" />
               </a>
             </IconsContainer>
-          
-        </Presentation>
-      </Row>
+          </Presentation>
+        </Row>
+        <div style={{margin:'auto', color:'white', fontFamily:"Raleway", marginTop:'50px', fontWeight:'bold'}}>
+          <span>MORE ABOUT ME</span>
+          <ArrowAnimation />
+        </div>
+      </Col>
     </SectionContainer>
   );
 }
@@ -83,16 +89,15 @@ const Presentation = styled.div`
   }
 
   span {
-    font-family: Pacifico;
+    font-family: Raleway;
+    font-weight: 900;
     font-size: 48px;
   }
 
   h1 {
-    font-family: Pacifico;
-    font-style: normal;
-    font-weight: normal;
+    font-family: Raleway;
+    font-weight: 900;
     font-size: 96px;
-    letter-spacing: 2px;
     margin: 0;
 
     @media (max-width: 415px) {

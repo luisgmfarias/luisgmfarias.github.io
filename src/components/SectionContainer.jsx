@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const SectionContainer = styled.div`
-    padding: 200px 230px;
+    padding: 100px 200px;
     background-color:#000000;
     display: flex;
 
