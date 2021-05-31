@@ -21,9 +21,9 @@ function Home() {
             <span>Hi, I am</span>
             <h1>Luís Farias.</h1>
             <p>
-              A creative developer focused on data, I had experience building
-              Data Engineering pipelines, AI development and Web Scraping. Based
-              in Cornélio Procópio, Brazil, studying Software Engineering.{" "}
+              A creative developer focused on data, I had experience deloping
+              Data Engineering pipelines, Web Scraping and Data Analysis. I am Based
+              in Cornélio Procópio, Brazil, where I study BS Software Engineering.{" "}
             </p>
 
             <strong>

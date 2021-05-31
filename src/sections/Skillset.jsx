@@ -8,16 +8,16 @@ import Fade from "react-reveal/Fade";
 function Skillset() {
   return (
     <SectionContainer id="skillset">
-      <Row style={{ justifyContent: "space-between", width: "100%" }}>
+      <Row style={{ justifyContent: "center", width: "100%" }}>
         <Fade left cascade>
           <SkillsetDetails>
             <SectionTitle>My Skillset</SectionTitle>
             <p>
               I have worked with a wide variety of things, but I have always
-              identified myself with data. I have already participated bulding
-              data architecture projects and data pipeline, as well as data
-              processing and modeling. Sometimes I find myself playing with data
-              scraping too. I really love working with Python.
+              identified myself with data. I did participate in data
+              architecture projects and pipeline development, as well as data
+              manipulation. Sometimes I find myself developing some scraping
+              scripts too. I really love working with Python.
             </p>
             <Row>
               <Col>
@@ -56,17 +56,17 @@ function Skillset() {
 export default Skillset;
 
 const Photo = styled.img`
-  width: 300px;
+  width: 250px;
 
   @media (max-width: 1024px) {
-    width: 200px;
+    width: 150px;
     margin: 0 auto;
-    margin-top:50px;
+    margin-top: 50px;
   }
 `;
 
 const SkillsetDetails = styled.div`
-  width: 920px;
+  width: 80%;
   font-family: Raleway;
 
   @media (max-width: 1024px) {
@@ -90,7 +90,7 @@ const SkillsetDetails = styled.div`
   }
 
   > div {
-    width: 55%;
+    width: 60%;
     justify-content: space-between;
     @media (max-width: 415px) {
       flex-direction: column;
@@ -98,9 +98,8 @@ const SkillsetDetails = styled.div`
       margin: 20px auto;
     }
 
-    @media (max-width: 1024px){
-      width:inherit;
-
+    @media (max-width: 1024px) {
+      width: inherit;
     }
   }
 `;

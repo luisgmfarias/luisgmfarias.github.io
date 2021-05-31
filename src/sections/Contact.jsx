@@ -15,8 +15,7 @@ function Contact() {
             Lets keep in touch!
           </SectionTitle>
           <Paragraph>
-            If you need an advice, talk about a project or would like to talk
-            about anything else, feel free to drop me a message at
+            Feel free to drop me a message at
             <a href="mailto:luisgmfarias@gmail.com"> luisgmfarias@gmail.com</a>.
           </Paragraph>
           <IconsContainer>

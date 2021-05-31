@@ -15,6 +15,7 @@ function Career() {
             >
               Research Visitor
             </CareerPos>
+            <p>Jan 2018</p>
           </CareerBox>
           <Arrow />
           <CareerBox>
@@ -24,6 +25,7 @@ function Career() {
             >
               Research Undergrad
             </CareerPos>
+            <p>2018-2020</p>
           </CareerBox>
           <Arrow />
           <CareerBox>
@@ -33,6 +35,7 @@ function Career() {
             >
               Engineering Summer Intern
             </CareerPos>
+            <p>Jan 2020 - Fev 2020</p>
           </CareerBox>
           <Arrow />
           <CareerBox>
@@ -42,6 +45,7 @@ function Career() {
             >
               Junior Data Scientist
             </CareerPos>
+            <p>Jun 2020 - May 2021</p>
           </CareerBox>
           <Arrow />
           <CareerBox>
@@ -51,6 +55,7 @@ function Career() {
             >
               AI Software Engineer
             </CareerPos>
+            <p>May 2021 - Present</p>
           </CareerBox>
         </CardContainer>
       </Col>
