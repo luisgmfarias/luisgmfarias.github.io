@@ -1,5 +1,4 @@
 import SectionContainer from "../components/SectionContainer";
-import { SectionTitle } from "../components/SectionTitle";
 import styled from "styled-components";
 import { Col } from "../components/Utils";
 

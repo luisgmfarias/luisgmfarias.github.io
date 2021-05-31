@@ -24,6 +24,7 @@ function Contact() {
               href="https://github.com/luisgmfarias"
               rel="noreferrer"
               target="_blank"
+              alt="github"
             >
               <img src={github} alt="github" />
             </a>
@@ -31,6 +32,7 @@ function Contact() {
               href="https://linkedin.com/in/luisgmfarias"
               rel="noreferrer"
               target="_blank"
+              alt="linkedin"
             >
               <img src={linkedin} alt="linkedin" />
             </a>
@@ -38,12 +40,20 @@ function Contact() {
               href="https://instagram.com/luisgmfarias"
               rel="noreferrer"
               target="_blank"
+              alt="instagram"
             >
               <img src={instagram} alt="instagram" />
             </a>
           </IconsContainer>
           <Paragraph>
-            Built from scratch by me, it is <strong>open source</strong>.
+            Built from scratch by me, it is{" "}
+            <a
+              href="https://github.com/luisgmfarias/luisgmfarias.github.io/tree/develop"
+              alt="github project repo"
+            >
+              <strong>open source</strong>
+            </a>
+            .
           </Paragraph>
         </Fade>
       </ContactContainer>
