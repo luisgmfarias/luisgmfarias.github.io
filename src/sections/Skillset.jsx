@@ -1,6 +1,6 @@
 import { Row, Col } from "../components/Utils";
 import { SectionTitle } from "../components/SectionTitle";
-import aiImage from "../assets/images/artificial-intelligence.jpg";
+import aiImage from "../assets/images/artificial-intelligence.png";
 import SectionContainer from "../components/SectionContainer";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 function Skillset() {
   return (
     <SectionContainer>
-      <Row>
+      <Row style={{ justifyContent: "space-between", width: "100%" }}>
         <Fade left cascade>
           <SkillsetDetails>
             <SectionTitle>My Skillset</SectionTitle>
@@ -43,11 +43,11 @@ function Skillset() {
             </Row>
           </SkillsetDetails>
         </Fade>
-        <Fade right>
-          <ImgContainer>
+        <ImgContainer>
+          <Fade right>
             <Photo src={aiImage} alt="ai-image" />
-          </ImgContainer>
-        </Fade>
+          </Fade>
+        </ImgContainer>
       </Row>
     </SectionContainer>
   );
@@ -56,19 +56,20 @@ function Skillset() {
 export default Skillset;
 
 const Photo = styled.img`
-  width: 400px;
+  width: 300px;
 
-  @media (max-width: 415px) {
+  @media (max-width: 1024px) {
     width: 200px;
     margin: 0 auto;
+    margin-top:50px;
   }
 `;
 
 const SkillsetDetails = styled.div`
-  width: 1000px;
+  width: 920px;
   font-family: Raleway;
 
-  @media (max-width: 415px) {
+  @media (max-width: 1024px) {
     width: inherit;
   }
 
@@ -96,6 +97,11 @@ const SkillsetDetails = styled.div`
       text-align: center;
       margin: 20px auto;
     }
+
+    @media (max-width: 1024px){
+      width:inherit;
+
+    }
   }
 `;
 
@@ -103,8 +109,8 @@ const ImgContainer = styled.div`
   display: flex;
   align-items: center;
 
-  @media (max-width: 415px) {
-    display: contents;
-    justify-content: center;
+  @media (max-width: 1024px) {
+    display: flex;
+    margin: auto;
   }
 `;

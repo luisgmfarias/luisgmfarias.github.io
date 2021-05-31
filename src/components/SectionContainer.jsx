@@ -6,7 +6,11 @@ const SectionContainer = styled.div`
     display: flex;
 
     @media(max-width: 415px){
-        padding:150px 40px;
+        padding:150px 25px !important;
+    }
+
+    @media(max-width: 768px){
+        padding:150px 40px !important;
     }
 `;
 

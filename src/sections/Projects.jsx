@@ -11,7 +11,6 @@ function Projects() {
         <SectionTitle style={{ color: "white" }}>Main Projects</SectionTitle>
         <ProjectCard href="https://datatrampos.com.br">
           <img src={datatrampos} alt="" srcset="" />
-          <p>DATATRAMPOS</p>
         </ProjectCard>
       </Col>
     </SectionContainer>
@@ -19,49 +18,30 @@ function Projects() {
 }
 
 const ProjectCard = styled.a`
-  width: 700px;
-  height: 700px;
-  position: relative;
+  width: 500px;
   margin-top: 50px;
   text-align: center;
-  cursor:pointer;
+  cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
-  
+  border: 2px solid white;
 
-  &:hover{
-      img{
-        transition: transform .5s ease;
-        filter: grayscale(7%);
-        transform: scale(1.04);
-      }
-      p{
-        transition: color .10s ease;
-        color:white;
-      }
+  @media (max-width: 768px) {
+      width:auto;
+  }
 
-      
+  &:hover {
+    img {
+      transition: transform 0.5s ease;
+      filter: grayscale(7%);
+      transform: scale(1.04);
+    }
   }
 
   img {
     width: 100%;
     filter: grayscale(30%);
     border-radius: 8px;
-  }
-
-  p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: Raleway;
-    font-weight: 900;
-    color: transparent;
-    font-size: 40px;
-    font-weight: bold;
-    color:transparent;
-    
-   
   }
 `;
 

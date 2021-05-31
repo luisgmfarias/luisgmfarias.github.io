@@ -109,6 +109,9 @@ const CardContainer = styled.div`
   margin-top: 50px;
   flex-wrap: wrap;
   align-items: center;
+  @media (max-width: 768px) {
+    justify-content: center ;
+  }
 `;
 
 const Arrow = styled.div`
@@ -117,4 +120,8 @@ const Arrow = styled.div`
   border: 1px solid #dcdcdc;
   border-width: 2px 2px 0 0;
   transform: rotate(45deg);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;

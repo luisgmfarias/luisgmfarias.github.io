@@ -12,7 +12,7 @@ function Home() {
   return (
     <SectionContainer style={{ paddingTop: "250px" }}>
       <Col>
-        <Row style={{alignItems: "center"}}>
+        <Row style={{alignItems: "center", justifyContent: "center"}}>
           <Fade left>
             <Photo src={photo} alt="profile-photo" />
           </Fade>
@@ -82,7 +82,7 @@ const Presentation = styled.div`
   padding: 0px 20px;
   width: 60%;
 
-  @media (max-width: 415px) {
+  @media (max-width: 1024px) {
     margin-top: 30px;
     padding: 0;
     width: 100%;

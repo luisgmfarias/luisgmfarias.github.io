@@ -54,12 +54,13 @@ function Contact() {
 export default Contact;
 
 const IconsContainer = styled.div`
+  width: 250px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   @media (max-width: 415px) {
-    width: 80%;
+    width: 150px;
     margin: 0 auto;
     margin-top: 30px;
   }
@@ -98,7 +99,7 @@ const ContactContainer = styled.div`
   margin: 0 auto;
   font-size: 20px;
 
-  @media (max-width: 415px) {
+  @media (max-width: 1024px) {
     width: 100%;
   }
 `;
