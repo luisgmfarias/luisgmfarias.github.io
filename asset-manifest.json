@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5eec6175.chunk.css",
+    "main.js": "/static/js/main.14b10d71.chunk.js",
+    "main.js.map": "/static/js/main.14b10d71.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b15082c4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b15082c4.js.map",
+    "static/js/2.99fa6320.chunk.js": "/static/js/2.99fa6320.chunk.js",
+    "static/js/2.99fa6320.chunk.js.map": "/static/js/2.99fa6320.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.5eec6175.chunk.css.map": "/static/css/main.5eec6175.chunk.css.map",
+    "static/js/2.99fa6320.chunk.js.LICENSE.txt": "/static/js/2.99fa6320.chunk.js.LICENSE.txt",
+    "static/media/Datatrampos.c32c0528.png": "/static/media/Datatrampos.c32c0528.png",
+    "static/media/artificial-intelligence.239d9350.png": "/static/media/artificial-intelligence.239d9350.png",
+    "static/media/carbon_3d-curve-manual.ad2441e0.svg": "/static/media/carbon_3d-curve-manual.ad2441e0.svg",
+    "static/media/luis-farias-resume-en.3ce26ef4.pdf": "/static/media/luis-farias-resume-en.3ce26ef4.pdf",
+    "static/media/profile-photo.72cddae5.jpeg": "/static/media/profile-photo.72cddae5.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b15082c4.js",
+    "static/js/2.99fa6320.chunk.js",
+    "static/css/main.5eec6175.chunk.css",
+    "static/js/main.14b10d71.chunk.js"
+  ]
+}
