@@ -17,7 +17,7 @@ function Skillset() {
               identified myself with data. I did participate in data
               architecture projects and pipeline development, as well as data
               manipulation. Sometimes I find myself developing some scraping
-              scripts too. I really love working with Python.
+              scripts too. I am a Python lover.
             </p>
             <Row>
               <Col>
