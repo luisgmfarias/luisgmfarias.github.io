@@ -5,6 +5,7 @@ import styled from "styled-components";
 function CurveConnector() {
   return (
     <div
+      id="contact"
       style={{
         background: "#000000",
         display: "flex",

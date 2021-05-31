@@ -10,7 +10,7 @@ import ArrowAnimation from "../components/ArrowAnimation";
 
 function Home() {
   return (
-    <SectionContainer style={{ paddingTop: "250px" }}>
+    <SectionContainer id="home" style={{ paddingTop: "250px" }}>
       <Col>
         <Row style={{alignItems: "center", justifyContent: "center"}}>
           <Fade left>
@@ -56,10 +56,10 @@ function Home() {
             </IconsContainer>
           </Presentation>
         </Row>
-        <div style={{margin:'auto', color:'white', fontFamily:"Raleway", marginTop:'50px', fontWeight:'bold'}}>
+        <a href="#skillset" style={{margin:'auto', color:'white', fontFamily:"Raleway", marginTop:'50px', fontWeight:'bold', textDecoration:'none'}}>
           <span>MORE ABOUT ME</span>
           <ArrowAnimation />
-        </div>
+        </a>
       </Col>
     </SectionContainer>
   );

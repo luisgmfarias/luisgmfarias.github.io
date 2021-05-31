@@ -13,6 +13,10 @@
   margin: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */
 }
@@ -25,55 +29,4 @@ body::-webkit-scrollbar-thumb {
   background-color: #DCDCDC;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 4px solid black;  /* creates padding around scroll thumb */
-}
-
-@-webkit-keyframes slide {
-  0% {
-    opacity: 0;
-    transform: translateX(15vw);
-  }
-  20% {
-    opacity: 1;
-    transform: translateX(9vw);
-  }
-  80% {
-    opacity: 1;
-    transform: translateX(-9vw);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-15vw);
-  }
-}
-@keyframes slide {
-  0% {
-    opacity: 0;
-    transform: translateX(15vw);
-  }
-  20% {
-    opacity: 1;
-    transform: translateX(9vw);
-  }
-  80% {
-    opacity: 1;
-    transform: translateX(-9vw);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-15vw);
-  }
-}
-
-
-.delay1 {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-.delay2 {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
-.delay3 {
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
 }

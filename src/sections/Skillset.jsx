@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 
 function Skillset() {
   return (
-    <SectionContainer>
+    <SectionContainer id="skillset">
       <Row style={{ justifyContent: "space-between", width: "100%" }}>
         <Fade left cascade>
           <SkillsetDetails>

@@ -14,7 +14,7 @@ function App() {
       <Skillset/>
       <Career/>
       <Projects/>
-      <CurveConnector />
+      <CurveConnector/>
       <Contact />
     </div>
   );

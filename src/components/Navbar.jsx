@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import PDF from "../assets/luis-farias-resume-en.pdf";
 
 function Header() {
   return (
     <Fade top cascade>
       <HeaderContainer>
-        <HeaderButton>Contact</HeaderButton>
-        <Logo href="http://localhost:3000">L</Logo>
-        <HeaderButton>Resume</HeaderButton>
+        <HeaderButton href="#contact">Contact</HeaderButton>
+        <Logo href="#home">L</Logo>
+        <HeaderButton href={PDF} target="_blank">
+          Resume
+        </HeaderButton>
       </HeaderContainer>
     </Fade>
   );
@@ -22,6 +25,7 @@ const HeaderButton = styled.a`
   color: #dcdcdc;
   font-weight: 400;
   cursor: pointer;
+  text-decoration: none;
 
   @media (max-width: 415px) {
     font-size: 18px;
@@ -52,5 +56,5 @@ const HeaderContainer = styled.div`
   background: black;
   padding: 0x 0;
   position: fixed;
-  z-index:999
+  z-index: 999;
 `;

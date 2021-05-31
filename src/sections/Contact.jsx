@@ -25,21 +25,21 @@ function Contact() {
               rel="noreferrer"
               target="_blank"
             >
-              <img src={github} alt="" />
+              <img src={github} alt="github" />
             </a>
             <a
               href="https://linkedin.com/in/luisgmfarias"
               rel="noreferrer"
               target="_blank"
             >
-              <img src={linkedin} alt="" />
+              <img src={linkedin} alt="linkedin" />
             </a>
             <a
               href="https://instagram.com/luisgmfarias"
               rel="noreferrer"
               target="_blank"
             >
-              <img src={instagram} alt="" />
+              <img src={instagram} alt="instagram" />
             </a>
           </IconsContainer>
           <Paragraph>
@@ -66,7 +66,7 @@ const IconsContainer = styled.div`
   }
 
   img {
-    width: 47px;
+    width: 50px;
 
     @media (max-width: 415px) {
       width: 30px;
