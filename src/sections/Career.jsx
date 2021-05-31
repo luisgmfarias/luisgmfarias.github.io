@@ -1,63 +1,68 @@
 import SectionContainer from "../components/SectionContainer";
 import styled from "styled-components";
 import { Col } from "../components/Utils";
+import Fade from "react-reveal/Fade";
 
 function Career() {
   return (
     <SectionContainer style={{ background: "#efefef" }}>
       <Col style={{ width: "100%" }}>
-        <Title>Career</Title>
-        <CardContainer>
-          <CareerBox>
-            <CareerCompany>NASA GSFC</CareerCompany>
-            <CareerPos
-              style={{ WebkitTextStroke: "1px black", color: "transparent" }}
-            >
-              Research Visitor
-            </CareerPos>
-            <p>Jan 2018</p>
-          </CareerBox>
-          <Arrow />
-          <CareerBox>
-            <CareerCompany>UTFPR</CareerCompany>
-            <CareerPos
-              style={{ WebkitTextStroke: "1px black", color: "transparent" }}
-            >
-              Research Undergrad
-            </CareerPos>
-            <p>2018-2020</p>
-          </CareerBox>
-          <Arrow />
-          <CareerBox>
-            <CareerCompany>Quero Educação</CareerCompany>
-            <CareerPos
-              style={{ WebkitTextStroke: "1px black", color: "transparent" }}
-            >
-              Engineering Summer Intern
-            </CareerPos>
-            <p>Jan 2020 - Fev 2020</p>
-          </CareerBox>
-          <Arrow />
-          <CareerBox>
-            <CareerCompany>Mais Retorno</CareerCompany>
-            <CareerPos
-              style={{ WebkitTextStroke: "1px black", color: "transparent" }}
-            >
-              Junior Data Scientist
-            </CareerPos>
-            <p>Jun 2020 - May 2021</p>
-          </CareerBox>
-          <Arrow />
-          <CareerBox>
-            <CareerCompany>Alana AI</CareerCompany>
-            <CareerPos
-              style={{ WebkitTextStroke: "1px black", color: "transparent" }}
-            >
-              AI Software Engineer
-            </CareerPos>
-            <p>May 2021 - Present</p>
-          </CareerBox>
-        </CardContainer>
+        <Fade>
+          <Title>Career</Title>
+        </Fade>
+        <Fade left cascade>
+          <CardContainer>
+            <CareerBox>
+              <CareerCompany>NASA GSFC</CareerCompany>
+              <CareerPos
+                style={{ WebkitTextStroke: "1px black", color: "transparent" }}
+              >
+                Research Visitor
+              </CareerPos>
+              <p>Jan 2018</p>
+            </CareerBox>
+            <Arrow />
+            <CareerBox>
+              <CareerCompany>UTFPR</CareerCompany>
+              <CareerPos
+                style={{ WebkitTextStroke: "1px black", color: "transparent" }}
+              >
+                Research Undergrad
+              </CareerPos>
+              <p>2018-2020</p>
+            </CareerBox>
+            <Arrow />
+            <CareerBox>
+              <CareerCompany>Quero Educação</CareerCompany>
+              <CareerPos
+                style={{ WebkitTextStroke: "1px black", color: "transparent" }}
+              >
+                Engineering Summer Intern
+              </CareerPos>
+              <p>Jan 2020 - Fev 2020</p>
+            </CareerBox>
+            <Arrow />
+            <CareerBox>
+              <CareerCompany>Mais Retorno</CareerCompany>
+              <CareerPos
+                style={{ WebkitTextStroke: "1px black", color: "transparent" }}
+              >
+                Junior Data Scientist
+              </CareerPos>
+              <p>Jun 2020 - May 2021</p>
+            </CareerBox>
+            <Arrow />
+            <CareerBox>
+              <CareerCompany>Alana AI</CareerCompany>
+              <CareerPos
+                style={{ WebkitTextStroke: "1px black", color: "transparent" }}
+              >
+                AI Software Engineer
+              </CareerPos>
+              <p>May 2021 - Present</p>
+            </CareerBox>
+          </CardContainer>
+        </Fade>
       </Col>
     </SectionContainer>
   );
@@ -114,7 +119,7 @@ const CardContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   @media (max-width: 768px) {
-    justify-content: center ;
+    justify-content: center;
   }
 `;
 

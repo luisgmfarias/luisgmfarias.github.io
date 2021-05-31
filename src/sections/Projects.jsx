@@ -3,16 +3,19 @@ import { SectionTitle } from "../components/SectionTitle";
 import datatrampos from "../assets/images/Datatrampos.png";
 import styled from "styled-components";
 import { Col } from "../components/Utils";
+import Fade from "react-reveal/Fade";
 
 function Projects() {
   return (
     <SectionContainer>
-      <Col>
-        <SectionTitle style={{ color: "white" }}>Main Projects</SectionTitle>
-        <ProjectCard href="https://datatrampos.com.br">
-          <img src={datatrampos} alt="" srcset="" />
-        </ProjectCard>
-      </Col>
+      <Fade>
+        <Col>
+          <SectionTitle style={{ color: "white" }}>Main Projects</SectionTitle>
+          <ProjectCard href="" alt="Em Breve">
+            <img src={datatrampos} alt="" srcset="" />
+          </ProjectCard>
+        </Col>
+      </Fade>
     </SectionContainer>
   );
 }
@@ -27,7 +30,7 @@ const ProjectCard = styled.a`
   border: 2px solid white;
 
   @media (max-width: 768px) {
-      width:auto;
+    width: auto;
   }
 
   &:hover {
