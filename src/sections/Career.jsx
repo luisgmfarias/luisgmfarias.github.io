@@ -59,7 +59,16 @@ function Career() {
               >
                 AI Software Engineer
               </CareerPos>
-              <p>May 2021 - Present</p>
+              <p>May 2021 - Sep 2021</p>
+            </CareerBox>
+            <CareerBox>
+              <CareerCompany>Savings Club</CareerCompany>
+              <CareerPos
+                style={{ WebkitTextStroke: "1px black", color: "transparent" }}
+              >
+                Software Engineer
+              </CareerPos>
+              <p>Sep 2021 - Present</p>
             </CareerBox>
           </CardContainer>
         </Fade>

@@ -11,7 +11,7 @@ function Projects() {
       <Fade>
         <Col>
           <SectionTitle style={{ color: "white" }}>Main Projects</SectionTitle>
-          <ProjectCard href="" alt="Em Breve">
+          <ProjectCard href="" alt="Coming soon">
             <img src={datatrampos} alt="" srcset="" />
           </ProjectCard>
         </Col>

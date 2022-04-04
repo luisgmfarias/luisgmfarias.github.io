@@ -12,7 +12,7 @@ function Home() {
   return (
     <SectionContainer id="home" style={{ paddingTop: "250px" }}>
       <Col>
-        <Row style={{alignItems: "center", justifyContent: "center"}}>
+        <Row style={{ alignItems: "center", justifyContent: "center" }}>
           <Fade left>
             <Photo src={photo} alt="profile-photo" />
           </Fade>
@@ -21,13 +21,13 @@ function Home() {
             <span>Hi, I am</span>
             <h1>Luís Farias.</h1>
             <p>
-              A creative developer focused on data, I had experience deloping
-              Data Engineering pipelines, Web Scraping and Data Analysis. I am Based
-              in Cornélio Procópio, Brazil, where I study BS Software Engineering.{" "}
+              A creative developer focused on data, I have experience in Web
+              Development, Mobile Development, Web Scraping and Python. I am
+              Based in São José dos Campos, Brazil.{" "}
             </p>
 
             <strong>
-              I work at <a href="https://alana.ai">Alana.ai</a> as AI Software
+              I work at <a href="https://savings.club">Savings Club</a> as a Software
               Engineer.
             </strong>
 
@@ -56,7 +56,17 @@ function Home() {
             </IconsContainer>
           </Presentation>
         </Row>
-        <a href="#skillset" style={{margin:'auto', color:'white', fontFamily:"Raleway", marginTop:'50px', fontWeight:'bold', textDecoration:'none'}}>
+        <a
+          href="#skillset"
+          style={{
+            margin: "auto",
+            color: "white",
+            fontFamily: "Raleway",
+            marginTop: "50px",
+            fontWeight: "bold",
+            textDecoration: "none",
+          }}
+        >
           <span>MORE ABOUT ME</span>
           <ArrowAnimation />
         </a>

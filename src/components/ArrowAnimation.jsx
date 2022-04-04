@@ -25,12 +25,12 @@ export default ArrowAnimation;
 const ArrowAnim = styled.div`
   width: 50px;
   transform: rotate(90deg);
-  margin:auto;
+  margin: auto;
 
   svg {
     width: 50px;
     height: auto;
-    margin:0 1rem;
+    margin: 0 1rem;
     cursor: pointer;
     overflow: visible;
     fill: #ffffff;

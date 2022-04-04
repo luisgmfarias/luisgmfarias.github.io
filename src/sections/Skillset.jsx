@@ -14,31 +14,26 @@ function Skillset() {
             <SectionTitle>My Skillset</SectionTitle>
             <p>
               I have worked with a wide variety of things, but I have always
-              identified myself with data. I did participate in data
-              architecture projects and pipeline development, as well as data
-              manipulation. Sometimes I find myself developing some scraping
-              scripts too. I am a Python lover.
+              identified myself with Data and Web development. I did participate
+              in data architecture projects and pipeline development, as well as
+              data manipulation. Sometimes I find myself developing some web
+              scraping scripts too. I am a Python lover.
             </p>
             <Row>
               <Col>
-                <span>Python</span>
-                <span>Pyspark</span>
-                <span>Pandas</span>
-              </Col>
-              <Col>
-                <span>Data Scraping</span>
-                <span>Jupyter</span>
+                <span>ReactJS</span>
+                <span>React Native</span>
                 <span>Docker</span>
               </Col>
               <Col>
-                <span>Git</span>
-                <span>Airflow</span>
-                <span>REST Api</span>
+                <span>Web Scraping</span>
+                <span>Python</span>
+                <span>Django</span>
               </Col>
               <Col>
+                <span>Git</span>
                 <span>Javascript</span>
-                <span>ReactJS</span>
-                <span>Adobe XD</span>
+                <span>REST Api</span>
               </Col>
             </Row>
           </SkillsetDetails>
