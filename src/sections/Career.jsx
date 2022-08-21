@@ -61,14 +61,25 @@ function Career() {
               </CareerPos>
               <p>May 2021 - Sep 2021</p>
             </CareerBox>
+            <Arrow />
             <CareerBox>
-              <CareerCompany>Savings Club</CareerCompany>
+              <CareerCompany>Exponential Ventures</CareerCompany>
+              <CareerPos
+                style={{ WebkitTextStroke: "1px black", color: "transparent" }}
+              >
+                Fullstack Software Engineer
+              </CareerPos>
+              <p>Sep 2021 - July 2022</p>
+            </CareerBox>
+            <Arrow />
+            <CareerBox>
+              <CareerCompany>Zenvia</CareerCompany>
               <CareerPos
                 style={{ WebkitTextStroke: "1px black", color: "transparent" }}
               >
                 Software Engineer
               </CareerPos>
-              <p>Sep 2021 - Present</p>
+              <p>Aug 2022 - present</p>
             </CareerBox>
           </CardContainer>
         </Fade>

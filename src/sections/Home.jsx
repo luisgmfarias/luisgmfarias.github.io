@@ -27,7 +27,7 @@ function Home() {
             </p>
 
             <strong>
-              I work at <a href="https://savings.club">Savings Club</a> as a Software
+              I work at <a href="https://zenvia.com">Zenvia</a> as a Software
               Engineer.
             </strong>
 

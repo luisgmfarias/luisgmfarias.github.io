@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import PDF from "../assets/luis-farias-resume-en.pdf";
+import PDF from "../assets/luis-farias-resume.pdf";
 
 function Header() {
   return (
