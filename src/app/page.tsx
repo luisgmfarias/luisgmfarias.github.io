@@ -49,7 +49,7 @@ export default function Home() {
               color={colors.goldYellow}
               isGradient
             >
-              Luís Farias
+              Luís Medeiros
             </Text>
             <Text fontWeight="200" fontSize="16px" color={colors.light}>
               Software engineer engaged in problem solving, systems development
@@ -76,7 +76,7 @@ export default function Home() {
           >
             <Image
               src="/assets/profile.jpeg"
-              alt="Luis Farias"
+              alt="Luis Medeiros"
               quality={100}
               fill
               objectFit="cover"
