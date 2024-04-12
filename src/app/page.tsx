@@ -1,9 +1,11 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa6'
 
 import { colors } from '@/constants/colors'
 import ImageContainer from '@/components/ImageContainer'
 import Text from '@/components/Text'
+import GradientSVG from '@/components/GradiendSVG'
 
 import {
   Container,
@@ -11,8 +13,6 @@ import {
   SocialMediaContainer,
   TextContainer,
 } from './styles'
-import GradientSVG from '@/components/GradiendSVG'
-import Link from 'next/link'
 
 export default function Home() {
   return (
