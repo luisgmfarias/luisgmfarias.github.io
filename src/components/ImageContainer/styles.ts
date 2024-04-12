@@ -13,7 +13,7 @@ export const Container = styled.div<{
 }>`
   ${({
     width,
-    height,
+    height = 'inherit',
     maxWidth,
     maxHeight,
     top = 'inherit',
@@ -24,7 +24,7 @@ export const Container = styled.div<{
       width: ${width};
       max-width: ${maxWidth};
       max-height: ${maxHeight};
-      ${height && `height: ${height}`};
+      height: ${height};
       left: ${left};
       top: ${top};
   `}
