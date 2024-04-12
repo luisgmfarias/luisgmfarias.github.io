@@ -1,95 +1,92 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa6'
+
+import { colors } from '@/constants/colors'
+import ImageContainer from '@/components/ImageContainer'
+import Text from '@/components/Text'
+
+import {
+  Container,
+  PresentationCard,
+  SocialMediaContainer,
+  TextContainer,
+} from './styles'
+import GradientSVG from '@/components/GradiendSVG'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <>
+      <Image
+        src="/assets/landscape.png"
+        alt="Landscape"
+        objectFit="cover"
+        fill={true}
+        quality={100}
+        style={{ filter: 'brightness(20%)' }}
+      />
+      <Container>
+        <PresentationCard>
+          <ImageContainer height="50%" width="100%">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+              src="/assets/landscape.png"
+              alt="Landscape"
+              quality={100}
+              fill={true}
+              style={{
+                borderTopLeftRadius: '10px',
+                borderTopRightRadius: '10px',
+              }}
             />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          </ImageContainer>
+          <TextContainer>
+            <Text fontWeight="200" fontSize="16px" color={colors.light}>
+              Hey there, I&apos;m
+            </Text>
+            <Text
+              fontWeight="bold"
+              fontSize="36px"
+              color={colors.goldYellow}
+              isGradient
+            >
+              Luís Farias
+            </Text>
+            <Text fontWeight="200" fontSize="16px" color={colors.light}>
+              Software engineer engaged in problem solving, systems development
+              and Data.
+            </Text>
+          </TextContainer>
+          <SocialMediaContainer>
+            <Link href="https://github.com/luisgmfarias" target="_blank">
+              <FaGithub style={{ fill: 'url(#gold-yellow)' }} />
+            </Link>
+            <Link href="https://instagram.com/euodeiobug" target="_blank">
+              <FaInstagram style={{ fill: 'url(#gold-yellow)' }} />
+            </Link>
+            <Link href="https://linkedin.com/luisgmfarias" target="_blank">
+              <FaLinkedin style={{ fill: 'url(#gold-yellow)' }} />
+            </Link>
+          </SocialMediaContainer>
+          <GradientSVG firstColor={colors.yellow} secondColor={colors.light} />
+          <ImageContainer
+            width="150px"
+            height="150px"
+            top="calc(50% - 75px)"
+            isAbsolute
+          >
+            <Image
+              src="/assets/profile.jpeg"
+              alt="Luis Farias"
+              quality={100}
+              fill
+              objectFit="cover"
+              style={{
+                borderRadius: '50%',
+              }}
+            />
+          </ImageContainer>
+        </PresentationCard>
+      </Container>
+    </>
   )
 }
