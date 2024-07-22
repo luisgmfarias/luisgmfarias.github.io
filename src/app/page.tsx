@@ -76,7 +76,7 @@ export default function Home() {
             <Link href="https://instagram.com/euodeiobug" target="_blank">
               <FaInstagram style={{ fill: 'url(#gold-yellow)' }} />
             </Link>
-            <Link href="https://linkedin.com/luisgmfarias" target="_blank">
+            <Link href="https://linkedin.com/in/luisgmfarias" target="_blank">
               <FaLinkedin style={{ fill: 'url(#gold-yellow)' }} />
             </Link>
           </SocialMediaContainer>
