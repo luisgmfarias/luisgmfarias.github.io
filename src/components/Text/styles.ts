@@ -1,7 +1,6 @@
-'use client'
 import styled from 'styled-components'
 
-export const Text = styled.p<{
+export const TextContainer = styled.p<{
   fontWeight: string
   fontSize: string
   color: string
